@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>bierLeat.ie</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+
+        }
+        .about {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            color: orange;
+            background-color: green;
+            font-weight: bolder;
+            box-shadow: 4px 8px 12px 4px orange;
+        }
+         h1 {
+            text-align: center;
+            color: green;
+            background-color: orange;
+            font-weight: bolder;
+            }
+
+        html {
+        box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+
+        .column {
+        float: left;
+        width: 48%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        }
+
+        .team {
+        box-shadow: 4px 8px 12px 4px green;
+        margin: 20px;
+        }
+
+        .container {
+        padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .position {
+        color: orange;
+        font-weight: bolder;
+        
+        }
+        p {
+            color: green;
+            text-align: center;
+        }
+        :any-link {
+            text-decoration: none;
+            color: orange;
+            font-weight: bolder;
+            cursor: grab;
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: black;
+        background-color: green;
+        text-align: center;
+        cursor: grab;
+        width: 100%;
+        box-shadow: 4px 8px 12px 4px orange;
+        opacity: 1;
+        transition: 0.3s;
+        }
+
+        .button:hover {
+        background-color: white;
+        margin: 4px 2px;
+        opacity: 0.6
+        }
+
+        @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        }
+
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+
+            <ul>
+                <li><a href="index.html" class="logo"><img id="logo" src="img/Logopit.png" alt=""></a></li>
+                <li><a id="menu" class="active" onmouseenter="setTimeout(makeVisible, 250, '#dropdown');">Menu</a>
+                    <div id="dropdown" onmouseleave="makeInvisible('#dropdown')">
+                        <a href="chinese.html">Chinese</a>
+                        <a href="indian.html">Indian</a>
+                        <a href="italian.html">Italian</a>
+                        <a href="mexican.html">Mexican</a>
+                        <a href="thai.html">Thai</a>
+                    </div>
+                </li>
+
+                <div id="search">
+                    <input type="text" name="" id="srcht"><button id="srchb"><img id="srch" src="img/search.png" alt=""
+                            height="14px"></button>
+                </div>
+            </ul>
+
+
+        </header>
+
+        <div class="space">
+
+        </div>
+
+        <a onclick="toTop()" id="go-to-top"><img id="top-icon" src="img/icon-top.png" alt=""></a>
+
+        <h2>The Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="team">
+                    <img src="img/ken.jpg" alt="Ken" width="auto" height="250px">
+                    <div class="container">
+                        <h1>Kennedy O.</h1>
+                        <p class="position">Co. Builder</p>
+                        <p>Studies Computer Science at Griffith College</p>
+                        <p class="call"><a href="tel:+353872914068">Call</a></p>
+                        <p><button class="button"><a href="mailto:kennedyonyemenam@yahoo.com"
+                                    target="_">Email</a></button></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    
+
+                    <div class="container">
+                        <img src="img/dami.jpg" alt="Dami" width="auto" height="250px">
+                        <h1>A. Damilare</h1>
+                        <p class="position">Co. Builder</p>
+                        <p>Studies Computer Science at Griffith College</p>
+                        <p class="call"><a href="tel:+353872914068">Call</a></p>
+                        <p><button class="button"><a href="mailto:damilareatilola@gmail.com"
+                                    target="_">Email</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer style="background-color: #616161; margin-top: 10px;">
+
+            <div
+                style="align-items: center; justify-content: center; display: flex; padding: 10px; flex-direction: column; line-height: 0.5em;">
+                <span><a href="contacts.html">Contact Us</a></span><br>
+                <span><a href="aboutus.html">About</a></span><br>
+                <span>
+                    <a href=""><span><img class="icon" src="img/icon-fb.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-tw.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-ig.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-in.png" alt=""></span></a>
+                </span>
+            </div>
+
+        </footer>
+
+
+
+</body>
+
+</html>

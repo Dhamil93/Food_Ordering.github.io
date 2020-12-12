@@ -1,0 +1,291 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    height: 46px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #616161;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    font-family: sans-serif;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 1em;
+    text-decoration: none;
+  }
+  #menu {
+    position: relative;
+    padding: 14px 33.4px;
+    margin-left: 0;
+  }
+
+  #dropdown {
+    background-color: #4CAF50;
+    position: absolute;
+    top: 48px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }  
+  #dropdown a {
+    color: black;
+    text-align: center;
+    padding: 14px 15.5px;
+    margin: 0.5em;
+    text-decoration: none;
+  }
+  #dropdown a:hover {
+    background-color: #111;
+    color: white;
+  }
+  #menu:hover {
+    background-color: #4CAF50;
+  }
+
+  
+  
+  li a:hover{
+    background-color: #111;
+  }
+  
+ #logo {
+      height: 46px;
+      width: auto;
+      padding: 0 !important;
+      margin: -1em !important;
+  }
+   .logo:hover {
+    background-color: transparent !important;
+  }
+
+  #search {
+    float: right;
+    clear: right;
+    margin-right: 1em;
+    margin-top: 30px;
+    
+  }
+
+  .space {
+    height: 50px;
+  }
+
+  .row {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.5s;
+  } 
+
+
+  .for-text h1 {
+    margin: 0 0 15px 0;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 56px;
+    color: #ff5e01;
+    font-family: "Poppins", sans-serif;
+  }
+  .for-text h2 {
+    color: #111;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  #buffet {
+    padding-left: 15px;
+    height: 35vw;
+  }
+
+  #top-icon {
+    background-color: #616161;
+    width: 40px;
+    border-radius: 50%;
+    border: #4CAF50 solid 2px;
+    position: fixed;
+    bottom: 25px;
+    right: 45px;
+    z-index: 100;
+    padding: 10px;
+    display: none;
+  }
+
+  #top-icon:hover {
+    background-color: #4CAF50;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  .card-body {
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 10px 30px;
+    margin: auto;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -120px;
+    transition: 0.3s; 
+    align-self: center;   
+  }
+
+  .card-img {
+    width: calc(100% + 45px);
+    margin-left: -10px;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 0;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+  }
+  .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .row1 {
+    padding-top: 45px;
+    display: flex;
+  }
+
+  .page {
+    width: 1000px;
+    padding: 25px;
+    margin: auto;
+  }
+  .food-header {
+    height: 300px;
+    width: 100%;
+    opacity: 0;
+    transition: ease 0.3s;
+  }
+  .translate {
+    font-style: normal;
+    color: #ff5e01;
+    font-weight: lighter;
+  }
+
+  .restaurant {
+    border-bottom: #4CAF50 solid 5px;
+    margin-bottom: 50px;
+  }
+  .carousel {
+    border: solid 2px #111;
+    display: flex;
+    overflow: hidden;
+  }
+  .carousel-img {
+    width: 500px;
+    padding: 5px;
+    justify-self: center;
+    margin: auto;
+  }
+  .address-card {
+    width: 300px;
+    border: #4CAF50 solid 2px;
+    float: right;
+    clear: right;
+    padding: 2px 12px 2px 12px;
+    line-height: 0.5rem;
+  }
+  .address-card a, .address-card a:link, footer a, footer a:link, .card a, .card a:link {
+    text-decoration: none;
+    color: black;
+  }
+  .card a:hover > .card-body {
+    color: #ff5e01;
+  }
+  .address-card a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+  .address-card span {
+    font-size: 20px;
+  }
+  .icon {
+    height: 25px;
+  }
+
+  @media (max-width:776px) {
+    .row {
+      flex-direction: column;
+    }
+    .card-img {
+      width: 80%
+      
+    }
+  }
+  @media (max-width:996px) {
+    .row1 {
+      flex-direction: column;
+    }
+    .card-img {
+      width: calc(552px);
+      
+    }
+    .column {
+      max-width: 75%;
+    }
+    .page {
+      width: 100%;
+      padding: 0;
+    }
+  }

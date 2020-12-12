@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>bierLeat.ie</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+            background-color: green;
+            color: orange;
+        }
+        h3{
+            text-align: center;
+        }
+      .contact {
+        border-radius: 5px;
+        background-color: rgb(87, 218, 104);
+        padding: 20px;
+        box-shadow: 4px 12px 12px 4px orange;;
+        }  
+       
+        input:not(#srcht), textarea {
+            width: 100%; 
+            padding: 12px;  
+            border: 1px solid orange; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px;
+            box-shadow: 4px 8px 12px 4px orange; 
+            margin-bottom: 16px; 
+            resize: vertical;
+            }
+        input [type=submit] {
+            
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: grab;
+        }
+        input[type=submit]:hover {
+                background-color: orange;
+                }
+        
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+
+            <ul>
+                <li><a href="index.html" class="logo"><img id="logo" src="img/Logopit.png" alt=""></a></li>
+                <li><a id="menu" class="active" onmouseenter="setTimeout(makeVisible, 250, '#dropdown');">Menu</a>
+                    <div id="dropdown" onmouseleave="makeInvisible('#dropdown')">
+                        <a href="chinese.html">Chinese</a>
+                        <a href="indian.html">Indian</a>
+                        <a href="italian.html">Italian</a>
+                        <a href="mexican.html">Mexican</a>
+                        <a href="thai.html">Thai</a>
+                    </div>
+                </li>
+
+                <div id="search">
+                    <input type="text" name="" id="srcht"><button id="srchb"><img id="srch" src="img/search.png" alt=""
+                            height="14px"></button>
+                </div>
+            </ul>
+
+
+        </header>
+
+        <div class="space">
+
+        </div>
+
+        <a onclick="toTop()" id="go-to-top"><img id="top-icon" src="img/icon-top.png" alt=""></a>
+
+        <h1>Contact us for more help</h1>
+        <h3>We will try as soon as possible to get back at your enquiries</h3>
+        <div class="contact">
+            <form action="aboutus.html" target="_">
+    
+                <label for="name">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Type in your names">
+    
+                <label for="email">Email</label>
+                <input type="text" id="mail" name="Email" placeholder="Type in your Mail....">
+    
+                <label for="country">County</label>
+                <input type="text" id="county" name="County" placeholder="Type your county....">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" placeholder="" style="height:200px"></textarea>
+                
+                <input type="submit" value="Submit" style="font-weight: bolder;">
+                
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <footer style="background-color: #616161; margin-top: 10px;">
+
+            <div
+                style="align-items: center; justify-content: center; display: flex; padding: 10px; flex-direction: column; line-height: 0.5em;">
+                <span><a href="contacts.html">Contact Us</a></span><br>
+                <span><a href="aboutus.html">About</a></span><br>
+                <span>
+                    <a href=""><span><img class="icon" src="img/icon-fb.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-tw.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-ig.png" alt=""></span></a>
+                    <a href=""><span><img class="icon" src="img/icon-in.png" alt=""></span></a>
+                </span>
+            </div>
+
+        </footer>
+
+
+
+</body>
+
+</html>

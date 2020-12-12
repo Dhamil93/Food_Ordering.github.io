@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>bierLeat.ie</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+
+            <ul>
+                <li><a href="index.html" class="logo"><img id="logo" src="img/Logopit.png" alt=""></a></li>
+                <li><a id="menu" class="active" onmouseenter="setTimeout(makeVisible, 250, '#dropdown');">Menu</a>
+                    <div id="dropdown" onmouseleave="makeInvisible('#dropdown')">
+                        <a href="chinese.html">Chinese</a>
+                        <a href="indian.html">Indian</a>
+                        <a href="italian.html">Italian</a>
+                        <a href="mexican.html">Mexican</a>
+                        <a href="thai.html">Thai</a>
+                    </div>
+                </li>
+
+
+                <div id="search">
+                    <input type="text" name="" id="srcht"><button id="srchb"><img id="srch" src="img/search.png" alt=""
+                            height="14px"></button>
+                </div>
+            </ul>
+
+
+        </header>
+
+        <div class="space">
+
+        </div>
+
+        <div class="page">
+            <div class="intro">
+                <img class="food-header" src="img/mexican-header.jpg" alt="">
+            </div>
+            <h1>MEXICAN <i class="translate" translation="Mexican Food" initial="comida mexicana"
+                    onmouseenter="translated(this);" onmouseleave="revert(this);">comida mexicana</i></h1>
+
+
+
+
+            <div class="restaurant">
+                <h1 style="text-align: center;">Burritos & Blues</h1>
+                <div class="carousel" style="margin-bottom: 30px;">
+                    <img class="carousel-img" width="100%" src="img/default2.jpg" alt="">
+                </div>
+                <div class="address-card" style="line-height: 1rem;">
+                    <h3>Location and Contact</h3>
+
+                    <p><span><a href="https://www.google.com/maps/dir//51.89921,-8.47457/@51.8992364,-8.5446525,12z/data=!3m1!4b1"
+                                target="_blank"><span><img height="20px" src="img/pin-icon.png" alt=""></span><span
+                                    style="font-size: 20px;">9 Paul Street, Centre.</span></a></span>
+                    </p>
+                    <p><span><a href="tel:+353214274374"><span><img height="20px" src="img/call-icon.png"
+                                        alt=""></span><span>+353 21 427 4374</span></a></span>
+                    </p>
+                </div>
+
+
+                <p style="font-size: 1.5rem;">Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..</p>
+            </div>
+
+
+            <div class="restaurant">
+                <h1 style="text-align: center;">Cafe Mexicana</h1>
+                <div class="carousel" style="margin-bottom: 30px;">
+                    <img class="carousel-img" width="100%" src="img/default2.jpg" alt="">
+                </div>
+                <div class="address-card" style="line-height: 1rem;">
+                    <h3>Location and Contact</h3>
+
+                    <p><span><a href="https://www.google.com/maps/dir//51.898895,-8.473764/@51.8987866,-8.5439006,12z"
+                                target="_blank"><span><img height="20px" src="img/pin-icon.png" alt=""></span><span
+                                    style="font-size: 20px;">Carey's Lane, Centre.</span></a></span>
+                    </p>
+                    <p><span><a href="tel:+353214276433"><span><img height="20px" src="img/call-icon.png"
+                                        alt=""></span><span>+353 21 427 6433</span></a></span>
+                    </p>
+                </div>
+
+
+                <p style="font-size: 1.5rem;">Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..</p>
+            </div>
+
+
+            <div class="restaurant">
+                <h1 style="text-align: center;">La Calavera</h1>
+                <div class="carousel" style="margin-bottom: 30px;">
+                    <img class="carousel-img" width="100%" src="img/default2.jpg" alt="">
+                </div>
+                <div class="address-card" style="line-height: 1rem;">
+                    <h3>Location and Contact</h3>
+
+                    <p><span><a href="https://www.google.ie/maps/place/Lantern+House/@51.933092,-8.5694791,17z/data=!3m1!4b1!4m5!3m4!1s0x48449165366977e9:0x2a6eb8daec539aaa!8m2!3d51.9330887!4d-8.5672904?hl=en"
+                                target="_blank"><span><img height="20px" src="img/pin-icon.png" alt=""></span><span
+                                    style="font-size: 20px;">4 Douglas West, Douglas.</span></a></span>
+                    </p>
+                    <p><span><a href="tel:+353214890011"><span><img height="20px" src="img/call-icon.png"
+                                        alt=""></span><span>+353 21 489 0011</span></a></span>
+                    </p>
+                </div>
+
+
+                <p style="font-size: 1.5rem;">Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..Some text some text some text
+                    some
+                    text..Some text some text some text some text..Some text some text some text some text..Some text
+                    some
+                    text some text some text..Some text some text some text some text..</p>
+            </div>
+        </div>
+
+        <a onclick="toTop()" id="go-to-top"><img id="top-icon" src="img/icon-top.png" alt=""></a>
+
+
+    </div>
+    <footer style="background-color: #616161; margin-top: 10px;">
+
+        <div
+            style="align-items: center; justify-content: center; display: flex; padding: 10px; flex-direction: column; line-height: 0.5em;">
+            <span><a href="contacts.html">Contact Us</a></span><br>
+            <span><a href="aboutus.html">About</a></span><br>
+            <span>
+                <a href=""><span><img class="icon" src="img/icon-fb.png" alt=""></span></a>
+                <a href=""><span><img class="icon" src="img/icon-tw.png" alt=""></span></a>
+                <a href=""><span><img class="icon" src="img/icon-ig.png" alt=""></span></a>
+                <a href=""><span><img class="icon" src="img/icon-in.png" alt=""></span></a>
+            </span>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
